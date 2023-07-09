@@ -3,22 +3,23 @@
 
 <head>
     <title>
-        Html CRUD with Pure JavaScript
+        CRUD JavaScript
     </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <table>
+    <table> 
         <tr>
             <td>
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label>Nama Lengkap</label><label class="validation-error hide" id="fullNameValidationError">This
+                            field is required.</label>
                         <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
-                        <label>EMP Code</label>
+                        <label>Keahlian</label>
                         <input type="text" name="empCode" id="empCode">
                     </div>
                     <div>
@@ -26,10 +27,10 @@
                         <input type="text" name="salary" id="salary">
                     </div>
                     <div>
-                        <label>City</label>
+                        <label>Asal</label>
                         <input type="text" name="city" id="city">
                     </div>
-                    <div  class="form-action-buttons">
+                    <div class="form-action-buttons">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
@@ -38,10 +39,10 @@
                 <table class="list" id="employeeList">
                     <thead>
                         <tr>
-                            <th>Full Name</th>
-                            <th>EMP Code</th>
+                            <th>Nama Lengkap</th>
+                            <th>Keahlian</th>
                             <th>Salary</th>
-                            <th>City</th>
+                            <th>Asal</th>
                             <th></th>
                         </tr>
                     </thead>
